@@ -57,6 +57,7 @@ export type Database = {
           theme?: string;
           updated_at?: string;
         };
+        Relationships: [];
       };
       pomodoro_sessions: {
         Row: {
@@ -91,6 +92,7 @@ export type Database = {
           completed?: boolean;
           label?: string | null;
         };
+        Relationships: [];
       };
       journal_entries: {
         Row: {
@@ -119,6 +121,7 @@ export type Database = {
           entry_date?: string;
           updated_at?: string;
         };
+        Relationships: [];
       };
       daily_checkins: {
         Row: {
@@ -150,6 +153,7 @@ export type Database = {
           notes?: string | null;
           checkin_date?: string;
         };
+        Relationships: [];
       };
       recovery_activities: {
         Row: {
@@ -175,7 +179,20 @@ export type Database = {
           duration_seconds?: number | null;
           activity_date?: string;
         };
+        Relationships: [];
       };
+    };
+    Views: {
+      [_ in never]: never;
+    };
+    Functions: {
+      [_ in never]: never;
+    };
+    Enums: {
+      [_ in never]: never;
+    };
+    CompositeTypes: {
+      [_ in never]: never;
     };
   };
 };

@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Sigma System — project-local team data (agent findings, decisions, patterns)
+.claude/teams/
